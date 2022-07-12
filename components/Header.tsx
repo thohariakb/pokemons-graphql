@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { StyledHeader } from './styles/Header.styled';
+import { FlexRow } from './styles/Flex.styled';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -10,21 +11,20 @@ const Header: React.FC<Props> = () => {
 	const router = useRouter();
 
 	return (
-		<>
+		<FlexRow>
 			<StyledHeader>
 				<Head>
 					<title>Pokemon</title>
 				</Head>
-				<div>
-					<Image
-						src="/img/pokemon-logo.svg"
-						width={200}
-						height={100}
-						alt="pokemon-logo"
-					/>
-				</div>
+
+				<Image
+					src="/img/pokemon-logo.svg"
+					width={200}
+					height={100}
+					alt="pokemon-logo"
+				/>
 			</StyledHeader>
-		</>
+		</FlexRow>
 	);
 };
 
