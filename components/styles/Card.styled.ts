@@ -15,7 +15,7 @@ export const StyledCard = styled.div`
 
 	& > div {
 		flex: 1;
-
+	    text-align: center;
 	}
 
 

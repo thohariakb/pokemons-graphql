@@ -15,12 +15,14 @@ const Header: React.FC<Props> = () => {
 				<Head>
 					<title>Pokemon</title>
 				</Head>
-				<Image
-					src="/img/pokemon-logo.svg"
-					width={200}
-					height={100}
-					alt="pokemon-logo"
-				/>
+				<div>
+					<Image
+						src="/img/pokemon-logo.svg"
+						width={200}
+						height={100}
+						alt="pokemon-logo"
+					/>
+				</div>
 			</StyledHeader>
 		</>
 	);
