@@ -18,7 +18,6 @@ export const StyledCard = styled.div`
 	    text-align: center;
 	}
 
-
 	& > div > h3 {
 		text-align: center;
 		margin: 20px 0;
@@ -40,5 +39,10 @@ export const StyledCard = styled.div`
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		flex-direction: column;
+
+		& > div {
+		flex: 1;
+	    text-align: start;
+	}
 	}
 `;
