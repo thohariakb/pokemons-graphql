@@ -11,7 +11,7 @@ const Header: React.FC<Props> = () => {
 	const router = useRouter();
 
 	return (
-		<FlexRow>
+		<>
 			<StyledHeader>
 				<Head>
 					<title>Pokemon</title>
@@ -24,7 +24,7 @@ const Header: React.FC<Props> = () => {
 					alt="pokemon-logo"
 				/>
 			</StyledHeader>
-		</FlexRow>
+		</>
 	);
 };
 
