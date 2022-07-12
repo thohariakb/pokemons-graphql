@@ -1,15 +1,12 @@
-import React from 'react';
 import Head from 'next/head';
-import { StyledHeader } from './styles/Header.styled';
-import { FlexRow } from './styles/Flex.styled';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import React from 'react';
+import { StyledHeader } from './styles/Header.styled';
 
 interface Props {}
 
 const Header: React.FC<Props> = () => {
-	const router = useRouter();
-
 	return (
 		<>
 			<StyledHeader>
