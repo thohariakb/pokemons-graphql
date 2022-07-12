@@ -16,14 +16,16 @@ const Pokemons: React.FC<Props> = () => {
 			{data?.pokemons?.results?.map((pokemon: any, index: number) => (
 				<Link key={index} href="/[pokemon_name]" as={`/${pokemon.name}`}>
 					<StyledCard>
-						<Image
-							src={pokemon.image}
-							width={100}
-							height={100}
-							alt="pokemon-pic"
-						/>
+						<div>
+							<Image
+								src={pokemon.image}
+								width={100}
+								height={100}
+								alt="pokemon-pic"
+							/>
 
-						<h3>{pokemon.name}</h3>
+							<h3>{pokemon.name}</h3>
+						</div>
 					</StyledCard>
 				</Link>
 			))}

@@ -19,8 +19,13 @@ export const StyledCard = styled.div`
 	}
 
 
-	h3 {
+	& > div > h3 {
 		text-align: center;
+		margin: 20px 0;
+		color: ${({ theme }) => theme.colors.pokemonText}
+	}
+
+	h3 {
 		margin: 20px 0;
 		color: ${({ theme }) => theme.colors.pokemonText}
 	}
